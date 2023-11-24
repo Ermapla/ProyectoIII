@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../EstilosCSS/stylee.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    
+    <header>
+      <div class="company-name">
+        <a href="index.html"><img class="logo"src="../Img/Logo lector digital.png" alt="Leccion Digital Logo"/></a>
+        <h1> Lección Digital</h1>
+      </div>
+      <nav class="navegacion">
+        <ul class="nav">
+          <li class="navegacion"><a href="/ProyectoIII/Templates/Tutorias.html">Tutorias</a></li>
+          <li class="navegacion"><a href="/ProyectoIII/Templates/ebooks.html">Ebooks</a></li>
+          <li class="navegacion"><a href="/ProyectoIII/Templates/registutores.html">Trabaja con nosotros</a></li>
+        </ul>
+      </nav>
+      <div class="button-container">
+        <button class="reg-btn" onclick="mostrarMensaje()">Registrarse</button>
+        <button class="login-btn" onclick="mostrarMensaje()">Iniciar Sesión</button>
+      </div>
+      <div class="menu-btn" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+    
+    <main>
+      <!-- Botón de Cambio de Modo -->
+      <button id="modoOscuroBtn">Dark Mode</button>
+
+      <div class="carousel-container">
+        <button id="prevBtn">Anterior</button>
+        <div class="carousel">
+          <div class="carousel-item">
+            <img id="img1" src="/Img/profebiologia.jpeg" alt="Imagen 1">
+            <p class="nomprofesor">Rajesh</p>
+            <p class="profesor">Apasionado por la biodiversidad y la ecología, <br>el Profesor Márquez lleva la biología a nuevas alturas. <br>Sus clases son como expediciones fascinantes a través del mundo natural,<br> donde cada concepto se convierte en una emocionante aventura.</p>
+          </div>
+          <div class="carousel-item">
+            <img id="img2" src="/Img/profeingles.jpeg" alt="Imagen 2">
+            <p class="nomprofesor">Elena</p>
+            <p class="profesor">La Profesora Ruiz hace que las matemáticas cobren vida con su enfoque práctico y creativo.<br> Su aula es un espacio donde los números se convierten en historias<br> y los problemas son rompecabezas emocionantes que resolver.</p>
+          </div>
+          <div class="carousel-item">
+            <img id="img3" src="/Img/profemath.jpeg" alt="Imagen 3">
+            <p class="nomprofesor">Foster</p>
+            <p class="profesor">El Profesor Foster transforma las clases de inglés en una experiencia literaria cautivadora. <br>Su amor por la palabra escrita y hablada crea un entorno en el que los estudiantes <br>se sumergen en la belleza del idioma inglés.</p>
+          </div>
+          <div class="carousel-item">
+            <img id="img4" src="/Img/artistprofesor.jpeg" alt="Imagen 4">
+            <p class="nomprofesor">Marta</p>
+            <p class="profesor">La creatividad de la Profesora Díaz no tiene límites.<br> Sus clases de arte son un festín visual donde los estudiantes exploran el mundo del color, <br>la forma y la expresión artística, descubriendo sus propias voces creativas.</p>
+          </div>
+          <div class="carousel-item">
+            <img id="img5" src="/Img/profeliteratura.jpeg" alt="Imagen 5">
+            <p class="nomprofesor">Alejandro</p>
+            <p class="profesor">Con una pasión contagiosa por la literatura,<br> el Profesor García lleva a los estudiantes en un viaje a través de las palabras. <br>Sus clases son un espacio donde los libros se convierten en ventanas a mundos<br> desconocidos y las historias se convierten en amigos cercanos.</p>
+          </div>
+          <div class="carousel-item">
+            <img id="img6" src="/Img/profeprogramacion.jpeg" alt="Imagen 6">
+            <p class="nomprofesor">Laura</p>
+            <p class="profesor">La Profesora Hernández es una maga de la programación.<br> Con su paciencia y conocimientos, convierte el mundo de los códigos en un lugar accesible y emocionante para todos,<br> donde cada línea de código cuenta una historia.</p>
+          </div>
+          <div class="carousel-item">
+            <img id="img7" src="/Img/profeyoga.jpeg" alt="Imagen 7">
+            <p class="nomprofesor">Arav</p>
+            <p class="profesor">La tranquilidad y la serenidad definen las clases de yoga del Profesor Arav. <br>Su enfoque holístico no solo trabaja los aspectos físicos, sino también los mentales y espirituales,<br> guiando a los estudiantes hacia el equilibrio y la paz interior.</p>
+          </div>
+          <div class="carousel-item">
+            <img id="img8" src="/Img/profepsicologia.jpeg" alt="Imagen 8">
+            <p class="nomprofesor">Claudia</p>
+            <p class="profesor"> Es una guía comprensiva en el viaje de la mente humana. <br>Sus clases de psicología son una exploración profunda de la psique, <br>donde los estudiantes descubren las complejidades de la mente y desarrollan <br>una comprensión más profunda de sí mismos y de los demás.</p>
+          </div>
+        </div>
+        <button id="nextBtn">Siguiente</button>
+      </div>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer-content container">
+          <element class="link">
+            <a href="index.html"><img class="logo1"src="../Img/Logo lector digital.png" alt="Leccion Digital Logo"/></a>
+            <h3 class="titlefoot"> Lección Digital </h3>
+            <h3 class="copy">&copy; 2023</h3>
+          </element>
+            <div class="icons">
+              <ul class="linksocial">
+                 <li><i class='bx bxl-instagram' ></i></li>
+                 <li><i class='bx bxl-linkedin-square' ></i></li>
+               </ul>
+            </div>
+      </div>
+  </footer>
+  <script src="/JS/Script.js"></script>
+  </body>
+</html>
+<<
+
+
+

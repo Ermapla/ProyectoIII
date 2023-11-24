@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecion Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/EstilosCSS/stylee.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    
+    <header>
+      <div class="company-name">
+        <a href="index.html"><img class="logo"src="/Img/Logo lector digital.png" alt="Leccion Digital Logo"/></a>
+        <h1> Lección Digital</h1>
+      </div>
+      <nav class="navegacion">
+        <ul class="nav">
+          <li class="navegacion"><a href="/ProyectoIII/Templates/Tutorias.html">Tutores</a></li>
+          <li class="navegacion"><a href="/ProyectoIII/Templates/ebooks.html">Ebooks</a></li>
+          <li class="navegacion"><a href="/ProyectoIII/Templates/registutores.html">Trabaja con nosotros</a></li>
+        </ul>
+      </nav>
+      <div class="button-container">
+        <button class="reg-btn" onclick="mostrarMensaje()">Registrarse</button>
+        <button class="login-btn" onclick="mostrarMensaje()">Iniciar Sesión</button>
+      </div>
+      
+      <div class="menu-btn" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+
+    <main>
+        <!-- Botón de Cambio de Modo -->
+        <button id="modoOscuroBtn">Dark mode</button>
+
+      <section class="container">
+        <article class="article1">
+          <p class="parra1"><strong>Tutorias & Ebooks online</strong></p><br>
+          <p class="parra2"><b>Desata tu potencial:</b> <br><br>Tutorías personalizadas y una biblioteca <br> virtual que te abre las puertas a tu crecimiento personal. <br><br>Aprender nunca fue tan <strong>emocionante.</strong> <br><br><b>!Tu viaje hacia el conocimiento comienza aquí!</b></p>
+       </article>
+       <article class="images">
+        <div class=" imgsup">
+          <img src="img/Embark_on_a_knowledge_adventure_with_our_virtual (1).jpg" alt="Estudiante con gafas de realidad virtual" />
+        </div>
+       </article>
+      </section>
+
+      <section class="btt-temas">
+          <form action="/procesar_formulario" method="post">
+            <label for="tututor">Elige tu tema y te recomendamos un tutor:</label>
+            <select id="tutor" name="genero">
+              <option value="novela"><b>Biologia</b></option>
+              <option value="cienciaficcion"><b>Ingles</b></option>
+              <option value="fantasia"><b>Matematicas</b></option>
+              <option value="poesia"><b>Arte</b></option>
+              <option value="novela"><b>Literatura</b></option>
+              <option value="cienciaficcion"><b>Programacion</b></option>
+              <option value="fantasia"><b>Yoga</b></option>
+              <option value="poesia"><b>Psicologia</b></option>
+            </select>
+             <button type="submit1" value="Encuentra tu tutor" >Encuentra tu tutor!</button>
+          </form>
+      </section>
+
+      <section class="data-line">
+        <article class="secondpart">
+          <div class="icons">
+              <i class='bx bxs-star' style='color:#ffe700' ></i>
+              <i class='bx bxs-star' style='color:#ffe700' ></i>
+              <i class='bx bxs-star' style='color:#ffe700' ></i>
+              <i class='bx bxs-star' style='color:#ffe700' ></i>
+              <i class='bx bx-star bx-flashing' style='color:#ffe700' ></i>
+          </div>
+          <p class="dato1"> 237.456 reviews</p>
+          <p class="dato2">¡El 90% de nuestros estudiantes aumentan sus calificaciones!</p>
+        </article>
+      </section>
+
+
+      <section class="specific-info">
+        <div class="img-information">
+          <div class="img-inf1">
+            <img src="img/Learn_on_your_terms_anywhere_anytime_Dive_in (1).jpg" alt="Virtual learnig market" />
+            <p class="text1"> <strong>Interactividad Educativa:<br><br></strong>¡Participa activamente en tu viaje de aprendizaje! <br><br>Nuestra plataforma ofrece sesiones de tutoría en vivo, foros de discusión dinámicos y actividades prácticas. </p> 
+          </div>
+          <div class="img-inf2">
+            <img src="img/Learn_on_your_terms_anywhere_anytime_Dive_in.jpg" alt="Online tutorial" />
+            <p class="text2"><strong>Accesibilidad y Flexibilidad:<br><br></strong>¡Aprende en cualquier momento y lugar!<br> <br>Disfruta de la flexibilidad para acceder a materiales educativos estés donde estés.<br><br> Nuestros horarios de tutoría están diseñados para adaptarse a tus necesidades.</p> 
+          </div>
+          <div class="img-inf3">
+            <img src="img/Learn_on_your_terms_anywhere_anytime_Dive_in (2).jpg" alt="Telephone tutorial conecction " />
+            <p class="text3"><strong>Enfoque Personalizado:<br></strong><br>Tu aprendizaje, a tu manera.<br><br> Experimenta la tutoría personalizada para abordar tus necesidades. <br><br> Nuestra plataforma utiliza la inteligencia artificial para recomendaciones de contenido personalizadas.</p>
+          </div>
+          <div class="img-inf4">
+            <img src="img/Embark_on_a_knowledge_adventure_with_our_virtual.jpg" alt="Telephone tutorial conecction " />
+            <p class="text4"><strong>Recursos Educativos Innovadores:<br></strong><br>Explora un mundo de conocimiento con nuestra biblioteca virtual. <br><br>Desde libros electrónicos hasta videos educativos, integramos herramientas de vanguardia como la realidad virtual para mejorar tu experiencia de aprendizaje.</p>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    
+    <footer class="footer">
+      <div class="footer-content container">
+          <element class="link">
+            <a href="index.html"><img class="logo1"src="/Img/Logo lector digital.png" alt="Leccion Digital Logo"/></a>
+            <h3 class="titlefoot"> Lección Digital </h3>
+            <h3 class="copy">&copy; 2023</h3>
+          </element>
+            <div class="icons">
+              <ul class="linksocial">
+                 <li><i class='bx bxl-instagram' ></i></li>
+                 <li><i class='bx bxl-linkedin-square' ></i></li>
+                 <li><i class='bx bxl-facebook-square' undefined ></i></li>
+
+               </ul>
+            </div>
+      </div>
+  </footer>
+  <script type="text/javascript" src="/JS/Script.js"></script>
+  
+  </body>
+</html>
+
+
+
+

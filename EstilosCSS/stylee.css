@@ -1,0 +1,598 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+  font-family: 'Montserrat', sans-serif;
+}
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    color: #0d0d0d 
+   }
+/* Estilo Modo oscuro*/
+   /* Estilos para el modo claro (predeterminado) */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.button-container button {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición para el color de fondo y el color del texto */
+}
+
+.dark-mode .button-container button {
+  background-color: #333; /* Cambia el color de fondo en modo oscuro */
+  color: #fff; /* Cambia el color del texto en modo oscuro */
+}
+
+/*boton movil de modo oscuro en pagina de ebook*/
+
+.dark-mode-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.dark-mode-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-mode-switch label {
+  background-color: #ccc;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.3s ease;
+  border-radius: 34px;
+}
+
+.dark-mode-switch input:checked + label {
+  background-color: #2196F3; /* Cambia el color de fondo cuando está activado */
+}
+
+.dark-mode-switch label:before {
+  content: '';
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+}
+
+.dark-mode-switch input:checked + label:before {
+  transform: translateX(26px); /* Mueve el interruptor a la posición "encendida" */
+}
+
+/* fin modo oscuro */
+
+    /*inicio Header para todas las paginas*/
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 2rem;
+    background-color: #0D0D0D;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  
+  .logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    padding-right: 0;
+    background-color: #000000;
+    cursor: pointer;
+  }
+    
+  .company-name {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #EEF279;
+    justify-content: space-around;
+  }
+  
+
+  .navegacion ul {
+    display: flex;
+    margin: 0;
+  }
+    
+  .navegacion li {
+     margin: 0 2rem;
+  }
+    
+  .navegacion a {
+    color: #A6A6A6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .login-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #EEF279;
+    color: #0D0D0D;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .reg-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #A6A6A6;
+    color: rgb(254, 252, 252);
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .button-container {
+    margin-right: 1rem; 
+  }
+  
+  .menu-btn {
+    display: none; 
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #A6A6A6;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  /*fin Header*/
+
+/* ----------------------*/
+/* mensaje de entrada pagina principal */
+ .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+    
+  .images img {
+    width :100%;
+    height: auto;
+    max-width: 100%; 
+    
+  }
+   .imgsup {
+    max-width: 50rem;
+   }
+
+  .parra1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8f4949;
+  }
+
+  .parra2 {
+    font-size: 2rem;
+  }
+
+
+  .article1 {
+padding-left: 3rem;
+  }
+
+  /* ----------------------*/
+
+
+  /* boton pagina inicio pag principal*/
+  .btt-temas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 25px;
+  }
+  .tutor select {
+   font: size 3rem;
+  }
+
+    select[id="tutor"] {
+      justify-content: center;
+      width: 60%;
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-top: 5px;
+      margin-left: 4rem;
+      border: 1px solid #a6a6a6;
+      border-radius: 5px;
+      background-color: #eef27918;
+    }
+
+  button[type="submit1"] {
+    margin-left: 20%;
+    display: flex;
+    padding: 10px;
+    background-color: #82d943;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.3);
+  }
+/*fin estilo boton pagina inicio*/
+
+/*rell de recomendacion pagina principal*/
+  .data-line {
+    background-color: #bf4949;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  .secondpart {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 4rem;
+    width: 100%;
+  }
+  /*fin rell de recomendacion pagina principal*/
+
+  /*seccion informacion general pagina principal */
+
+  .img-information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    flex-direction: column-reverse;
+    align-content: center;
+    font-size: 1.5rem;
+  }
+
+ .img-information img{
+  max-width: 30%;
+  padding: 1rem;
+}
+
+.img-inf1, .img-inf3 {
+  display: flex;
+  align-items: center;
+  background-color: #a6a6a6;
+  border-radius: 10px;
+  padding: 3rem;
+  margin: 3rem;
+  padding-right: 4rem;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.514);
+  color:#8f4949;
+}
+
+.img-inf2, .img-inf4 {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.537);
+  display: flex;
+  align-items: center;
+  background-color: #82d943;
+  border-radius: 10px;
+  padding: 3rem;
+  margin: 2rem;
+  flex-direction: row-reverse;
+  color:#8f4949;
+}
+
+/* fin seccion informacion general pagina principal */
+
+
+   /*estilos formulario, pagina de registro de tutores*/
+ 
+    .container-formulario {
+      font-size: 1.5rem;
+      background: #a6a6a6;
+      margin: 1rem;
+      border-radius: 10px;
+      padding: 20px;
+      width: 40rem;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 5px 7px 10px 4px rgba(0, 0, 0, 0.625);
+  }
+    .regdetutor {
+      text-align: center;
+      color: #82d943;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+  }
+    
+    .formreg {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1rem;
+      font-size: 1.5rem;
+      margin : 1rem;
+      color: #8f4949;
+    }
+
+     label {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+     input,
+     select {
+     padding: 8px;
+     margin-bottom: 16px;
+     border: 1px solid #a1a1a165;
+     border-radius: 4px;
+     color: #6b6b6bab;
+    }
+
+     button[type="submitreg"]{
+     background-color: #82d943; /* Color de fondo del botón */
+     color: #fff; /* Color del texto del botón */
+     padding: 10px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 1rem;
+       }
+ /* fin estilos formularios pagina de registro de tutores*/  
+
+
+
+  /* hover todos los botones del sitio web*/
+  button:hover {
+      background-color: #45a049;
+  }
+ /* fin hover ----------------------------*/
+
+
+ 
+
+
+  /* estilo Tutores pagina */
+
+.carousel-container {
+  position : relative;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%; /* o puedes establecer un ancho fijo en píxeles */
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item{
+  flex: 0 0 100%
+}
+
+.carousel img {
+  width: 30%;
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px 0 rgba(0, 0, 1, 0.682);
+  padding: 1rem;
+  background-color: #a6a6a6;
+}
+
+.nomprofesor {
+  font-size: 2rem;
+}
+
+.profesor {
+  font-display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #8f4949;
+  margin: 1rem 30rem 1rem;
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px 3px rgba(0, 0, 1, 0.602);
+  color: #a6a6a6;
+}
+
+#prevBtn, #nextBtn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#prevBtn {
+  left: 10px;
+}
+/* Añade márgenes al botón "Siguiente" para separarlo del carrusel */
+#nextBtn {
+  right: 10px;
+}
+  /*fin estilo tutores*/
+
+  /* inicio footer para todas las paginas*/
+ footer {
+  display: flex;
+  background-color: #000000;
+  color: #a6a6a6;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+ }
+  .logo1{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding-right: 0;
+    background-color: #000000;
+
+}
+
+  element {
+   display: flex;
+   align-items: center;
+   padding: 0.5rem;
+  }
+
+   .linksocial {
+    display: flex;
+    justify-content: center;
+    list-style: none; 
+    padding: 0; 
+ }
+
+   .linksocial i {
+  text-decoration: none;
+   } 
+
+   /* fin footer para todas las paginas */
+
+   /* responsive*/
+
+@media only screen and (max-width: 768px) {
+     body {
+    font-size: 14px; /* Ajusta el tamaño de la fuente u otros estilos según sea necesario */
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  
+    .navegacion ul {
+      display: none;
+    }
+
+    .nav {
+      display: none; /* Ocultar la navegación por defecto en dispositivos pequeños */
+    }
+  
+    .nav.active {
+      display: flex; /* Mostrar la navegación cuando el menú está activo */
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+    }
+  
+    .nav li {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .images {
+      padding: 2rem;
+    }
+
+    .img-information {
+      flex-direction: column; /* Cambiar a disposición de columna en dispositivos pequeños */
+      align-items: center; /* Centrar elementos en dispositivos pequeños */
+    }
+  
+    .img-information img {
+      margin-bottom: 0.5rem; /* Reducir el espaciado en dispositivos móviles */
+    }
+  }
+
+  
+
+  @media only screen and (max-width: 320px) {
+
+    body {
+      font-size: 12px; /* Ajusta el tamaño de la fuente u otros estilos según sea necesario */
+    }
+  
+    .company-name {
+      font-size: 1.5rem;
+    }
+  
+    .parra1 {
+      font-size: 2rem;
+    }
+  
+    .parra2 {
+      font-size: 1.5rem;
+    }
+  
+    .btt-temas {
+      font-size: 20px;
+    }
+  
+    .dato1,
+    .dato2 {
+      font-size: 1rem;
+    }
+  
+    .specific-info {
+      padding: 1rem;
+    }
+  
+    .img-information {
+      padding: 1rem;
+    }
+  
+    .img-information img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+  
+    .titulo {
+      font-size: 1.2rem;
+    }
+  
+    .texto {
+      font-size: 0.9rem;
+    }
+    .secondpart {
+      flex-direction: column;
+      text-align: center;
+    }
+    .button-container {
+      flex-direction: column; /* Cambiar a disposición de columna */
+      align-items: center; /* Centrar elementos en dispositivos pequeños */
+      margin-top: 1rem; /* Agregar un margen superior para separar de otros elementos */
+    }
+  
+    .reg-btn,
+    .login-btn {
+      width: 100%; /* Hacer que los botones ocupen todo el ancho disponible */
+      margin-bottom: 0.5rem; /* Agregar espacio entre los botones */
+    }
+
+  }
+/*fin responsive*/
+
+
+
